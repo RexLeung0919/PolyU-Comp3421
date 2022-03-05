@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Personal Web Page Of Rex Leung</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        body p{
+          font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #mySidenav a {
+        position: absolute;
+        left: -80px;
+        transition: 0.3s ;
+        padding: 15px ;
+        width: 100px ;
+        text-decoration:none;
+        font-size:20 px;
+        color:white;
+        border-radius: 0px 50px 50px 0px;
+        }
+
+
+        #mySidenav a:hover {
+        left:0;
+        }
+
+        #about {
+        top: 20px ;
+        background-color:#04AA6D ;
+        }
+
+
+        #blog {
+        top: 80px ;
+        background-color:#2196F3 ;
+        }
+
+
+        #projects {
+        top: 140px;
+        background-color:#f44336 ;
+        }
+
+        #contact {
+        top: 200px;
+        background-color:#555
+        }
+
+
+
+
+
+
+        body, html {
+        height: 100%;
+        margin: 0;
+        font: 400 15px/1.8 "Lato", sans-serif;
+        color: #777;
+        }
+
+        .bgimg-1, .bgimg-2, .bgimg-3{
+        position: relative;
+        opacity: 0.65;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+
+        .bgimg-1 {
+        background-image: url("back.jpg");
+        min-height: 100%;
+        }
+
+        .bgimg-2 {
+        background-image: url("back blue.jpg");
+        min-height: 400px;
+        }
+
+        .bgimg-3 {
+        background-image: url("map.jpg");
+        min-height: 400px;
+        }
+
+        .caption {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        text-align: center;
+        color: #000;
+        }
+
+        .caption span.border {
+        background-color: #111;
+        color: #fff;
+        padding: 18px;
+        font-size: 25px;
+        letter-spacing: 10px;
+        }
+
+        h3 {
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        font: 20px "Lato", sans-serif;
+        color: #111;
+        }
+
+        /* Turn off parallax scrolling for tablets and phones */
+        @media only screen and (max-device-width: 1024px) {
+            .bgimg-1, .bgimg-2, .bgimg-3 {
+            background-attachment: scroll;
+            }
+        }
+
+        .container{
+        display:flex;
+      }
+
+        .left{
+            flex:1;
+            width: 50%;
+        }
+        .right{
+            flex:1;
+            right: 0px;
+            width: 50%;
+        }
+        .bar{
+          width: 100%;
+        }
+        .icon{
+          height: 75px;
+        }
+
+
+
+
+        .job {
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        border-color:rgba(221, 221, 221, 0);
+        width: 100%;
+        }
+
+        .job td, .job th {
+        border: 1px solid #ddd;
+        padding: 8px;
+        color: rgb(0, 0, 0);
+        }
+
+        .job tr:nth-child(even){background-color: #f1f1f1;}
+        .job tr:nth-child(odd){background-color: #b6b6b6;}
+
+        .job tr:hover {background-color: #ddd;}
+
+        .job th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: center;
+        background-color: #000000;
+        color: white;
+        }
+
+    </style>
+</head>
+<body style="background-color:#000000;">
+
+
+
+<div class="icon">
+    <iframe class="bar" src="nav.html" frameborder="0"></iframe> 
+</div>
+
+<div class="bgimg-1">
+  <div class="caption">
+  <span class="border">Personal Web Page Of Rex Leung<br></span>
+  <span class="border">Scroll down to view more</span>
+  
+  
+  </div>
+</div>
+
+
+<div style="position:relative;">
+  <div class="container"  style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;">
+    <div class=left>
+    <h3 style="text-align:center; color: #ddd;">About Me</h3>
+    <hr style="border-top: 0.1px rgb(161, 100, 47) solid;">
+    <p>I am a third-year student at the Hong Kong Polytechnic University and am now studying a computer and electronic engineering related field. 
+      Good knowledge and experience in the field of information technology. And have relevant knowledge in data processing and analysis, 
+      and have established databases in biotechnology companies. 
+      I have a broad knowledge of structured programming techniques such as website and application development, 
+      with electronics and data communications being my current main area of expertise.</p>
+      </div>
+      <div class=right>
+        <h3 style="text-align:center; color: #ddd;">Photo</h3>
+        <hr style="border-top: 0.1px rgb(161, 100, 47) solid;">
+        <img src="noimage.jpg" alt="">
+      </div>
+    </div>
+</div>
+
+
+
+<div class="bgimg-2">
+  <div class="caption">
+  <span class="border">Scroll down to view my experience</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+  <h3 style="text-align:center; color: #ddd;">This is my pass experience</h3>
+  <hr style="border-top: 0.1px rgb(161, 100, 47) solid;">
+  <table class="job">
+    <tr>
+      <th>Company</th>
+      <th>Post</th>
+      <th>Job Duty</th>
+      <th>Project</th>
+      <th>Period</th>
+    </tr>
+    <tr>
+      <td><a href="http://www.ymcahk.org.hk/main/en/home/index.html">Mononuclear Therapeutics Limited (MonoTx™)</a></td>
+      <td>Tutor</td>
+      <td>Teach Student</td>
+      <td>-</td>
+      <td>06/2019-NOW</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.censtatd.gov.hk/en/">Census and Statistics Department,C&SD</a></td>
+      <td>Census Enumerators</td>
+      <td>Make Phone Call</td>
+      <td>Census 2021</td>
+      <td>06/2021-08/2021</td>
+    </tr>
+    <tr>
+      <td><a href="https://monotx.com/">Mononuclear Therapeutics Limited (MonoTx™)</a></td>
+      <td>Lab Assistant</td>
+      <td>Database Maintenance</td>
+      <td>Inventory System</td>
+      <td>06/2019-08/2019</td>
+    </tr>
+    
+    
+  </table>
+  </div>
+</div>
+
+<div class="bgimg-3">
+  <div class="caption">
+  <span class="border">MY Favorite</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+  <p>PolyU is committed to the principles of good governance to ensure that the University is fit for its purpose – a higher-learning institution of teaching and research, at the same time providing consultancy and professional services for the benefit of the community.</p>
+  </div>
+</div>
+
+<div class="bgimg-1">
+  <div class="caption">
+  <span class="border">COOL!</span>
+  </div>
+</div>
+
+</body>
+</html>
