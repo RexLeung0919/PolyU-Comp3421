@@ -5,46 +5,100 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <style>
+      .short{
+        font-family: "Lucida Handwriting";
+        width: 180px;
+        text-align: center;
+      }
+
+      .hide {
+        display: none;
+      }
+    
+      .myDIV:hover + .hide {
+        display: block;
+        color: red;
+      }
+
+      .contain {
+      position: relative;
+      top: 0;
+      width: 50%;
+      }
+
+      .image {
+      width: 500px;
+      height: 500px;
+      height: auto;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 200px;
+      right: 0;
+      transition: .5s ease;
+      }
+
+      .info{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 200px;
+        right: 0;
+        transition: .5s ease;
+      }
+      
         body p{
           font-family: Arial, Helvetica, sans-serif;
         }
 
+        .Sidenav{
+        float: left;
+        width: 50%;
+        }
+
+        .Sidenavr{
+        float: right;
+        width: 50%;
+        height: 260px;
+        margin-right: -300px;
+        }
+
         #mySidenav a {
         position: absolute;
-        left: -80px;
+        left: -200px;
         transition: 0.3s ;
         padding: 15px ;
-        width: 100px ;
+        width: 300px ;
         text-decoration:none;
-        font-size:20 px;
+        font-size:25px;
         color:white;
         border-radius: 0px 50px 50px 0px;
         }
 
 
-        #mySidenav a:hover {
+        #mySidenav a:hover{
         left:0;
         }
 
-        #about {
+        #travel {
         top: 20px ;
         background-color:#04AA6D ;
         }
 
 
-        #blog {
-        top: 80px ;
+        #sleep {
+        top: 140px ;
         background-color:#2196F3 ;
         }
 
 
-        #projects {
-        top: 140px;
+        #sport {
+        top: 260px;
         background-color:#f44336 ;
         }
 
         #contact {
-        top: 200px;
+        top: 380px;
         background-color:#555
         }
 
@@ -126,8 +180,29 @@
         .right{
             flex:1;
             right: 0px;
+            top: 0;
             width: 50%;
         }
+
+        .containerf{
+          position: relative;
+      }
+
+        .leftf{
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 300px;
+          height: 500px;
+          width: 100%;
+          height: 300px;
+        }
+        .rightf{
+          margin-left: 300px;
+          height: 500px;
+        }
+
+
         .bar{
           width: 100%;
         }
@@ -170,7 +245,7 @@
 
 
 
-<div class="icon">
+<div class="icon" id="top">
     <iframe class="bar" src="nav.html" frameborder="0"></iframe> 
 </div>
 
@@ -184,7 +259,7 @@
 </div>
 
 
-<div style="position:relative;">
+<div style="position:relative;" id="aboutme">
   <div class="container"  style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;">
     <div class=left>
     <h3 style="text-align:center; color: #ddd;">About Me</h3>
@@ -211,7 +286,7 @@
   </div>
 </div>
 
-<div style="position:relative;">
+<div style="position:relative;" id="exp">
   <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
   <h3 style="text-align:center; color: #ddd;">This is my pass experience</h3>
   <hr style="border-top: 0.1px rgb(161, 100, 47) solid;">
@@ -252,20 +327,94 @@
 
 <div class="bgimg-3">
   <div class="caption">
-  <span class="border">MY Favorite</span>
+  <span class="border">My Favorite</span>
   </div>
 </div>
 
-<div style="position:relative;">
-  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-  <p>PolyU is committed to the principles of good governance to ensure that the University is fit for its purpose – a higher-learning institution of teaching and research, at the same time providing consultancy and professional services for the benefit of the community.</p>
+<div class="containerf"  style="position:relative;" id="favorite">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:20px 20px;text-align: justify;">
+    <div id="mySidenav"class="leftf">
+      <a href="https://www.lonelyplanet.com/" id="travel" style="text-align: right;">Click to Travel Hover Me</a>
+      <a href="https://www.healthline.com/nutrition/10-reasons-why-good-sleep-is-important?c=631849936993" id="sleep" style="text-align: right;">Click to Sleep Hover Me</a>
+      <a href="https://olympics.com/en/" id="sport" style="text-align: right;">Click to Sport Hover Me</a>
+      <a href="#con" id="contact" style="text-align: right;">Click to Contact Hover Me</a>
+      </div>
+
+      <div class="rightf" >
+
+        <div class="contain">
+          <div class="myDIV">
+            <p class="short" id="travel">Show Travel img</p>
+          </div>
+          <div class="hide">
+            <img src="japan.jpg" class="image">
+          </div>
+          <div class="myDIV">
+            <p class="short" id="sleep">Show Sleep img</p>
+          </div>
+          <div class="hide">
+            <img src="sleep.jpg" class="image">
+          </div>
+          <div class="myDIV">
+            <p class="short" id="sport">Show Sport img</p>
+          </div>
+          <div class="hide">
+            <img src="cycling.jpg" class="image">
+          </div>
+          </d iv>
+          
+            
+          </div>
+        </div>
+    </div>
   </div>
-</div>
+
 
 <div class="bgimg-1">
   <div class="caption">
-  <span class="border">COOL!</span>
+  <span class="border">That All</span>
   </div>
+</div>
+
+<div class="container" style="color:#ddd;background-color:#282E34;text-align:center;padding:20px 20px;text-align: justify;">
+
+  <div id="con" class="left">
+    <table style="width: auto;" class="job">
+      <tr>
+        <th>Name</th>
+        <td>Leung Lap Mun</td>
+      </tr>
+      <tr>
+        <th>Phone</th>
+        <td>(852) 9999 9999</td>
+      </tr>
+      <tr>
+        <th>Email</th>
+        <td><a href="21035154d@connect.polyu.hk">21035154d@connect.polyu.hk</a></td>
+      </tr>
+      <tr>
+        <th>LinkedIn</th>
+        <td><a href="linkedin.com/in/lap-mun-leung-54a787161">Click to contact me</a></td>
+      </tr>
+    </table>
+  </div>
+  <div class="rigntf">
+    <table>
+      <tr>
+        <td><a href="index.html#top" target="_parent">HOME</a></td>
+      </tr>
+      <tr>
+        <td><a href="index.html#aboutme" target="_parent">ABOUT</a></td>
+      </tr>
+      <tr>
+        <td><a href="index.html#exp" target="_parent">EXPERIENCE</a></td>
+      </tr>
+      <tr>
+        <td><a href="index.html#favorite" target="_parent">FAVORITE</a></td>
+      </tr>
+    </table>
+  </div>
+
 </div>
 
 </body>
